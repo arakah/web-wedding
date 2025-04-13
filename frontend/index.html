@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mr. A & Ms. B</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<!-- simplyCountdown -->
+<link rel="stylesheet" href="countdown/simplyCountdown.theme.default.css"/>
+<script src="countdown/simplyCountdown.min.js"></script>
+
+<link rel="stylesheet" href="https://unpkg.com/ionicons@5.5.0/dist/ionicons.min.css">
+
+
+    <link rel="stylesheet" href="style.css"> 
+</head>
+
+<!-- MUSIK -->
+<section id="musik" class="musik">
+  <div class="audio-container">
+    <audio id="audioPlayer" autoplay>
+      <source src="lagu.mp3" type="audio/mp3">
+      Browser Anda tidak mendukung elemen audio.
+    </audio>
+  </div>
+</section>
+
+
+<!-- Mute n Unmute Icons -->
+<div class="control-buttons">
+  <img id="muteIcon" src="img/mute.png" alt="Mute" onclick="toggleMute()" />
+  <img id="unmuteIcon" src="img/unmute.png" alt="Unmute" onclick="toggleUnMute()" style="display:none;" />
+</div>
+
+
+<body>
+<!-- Hero Section - PEMBUKA -->
+<section id="hero" class="hero text-center justify-content-center align-items-center text-white">
+  <main>
+      <br>
+      <br>
+      <br>
+      <br>
+      <h4>Kepada Bapak/Ibu/Saudara/i, </h4>
+      <h1>Mr. A & Ms. B</h1>
+      <p>Akan melangsungkan resepsi pernikahan pada:</p>
+      <div class="simply-countdown"></div>
+      <a href="#salam" class="btn btn-lg">Buka Undangan</a>       
+  </main>
+</section>  
+
+
+
+<!-- Navbar -->
+<nav class="navbar bg-body-transparant fixed-bottom mynavbar" id="mainNavbar">
+  <div class="container justify-content-center">
+    <a class="navbar-brand" href="#hero">
+      <img src="img/Beranda-removebg-preview.png" alt="beranda" class="navbar-icon">
+    </a>
+    <a class="navbar-brand" href="#salam">
+      <img src="img/salam-removebg-preview.png" alt="salam" class="navbar-icon">
+    </a>
+    <a class="navbar-brand" href="#kutipan">
+      <img src="img/kutipan-removebg-preview.png" alt="kutipan" class="navbar-icon">
+    </a>
+    <a class="navbar-brand" href="#acara">
+      <img src="img/acara-removebg-preview.png" alt="acara" class="navbar-icon">
+    </a>
+    <a class="navbar-brand" href="#galeri">
+      <img src="img/galeri-removebg-preview.png" alt="galeri" class="navbar-icon">
+    </a>
+    <a class="navbar-brand" href="#reservasi">
+      <img src="img/reservasi-removebg-preview.png" alt="reservasi" class="navbar-icon">
+    </a>
+    <a class="navbar-brand" href="#hadiah">
+      <img src="img/hadiah-removebg-preview.png" alt="hadiah" class="navbar-icon">
+    </a>
+    <a class="navbar-brand" href="#ucapan">
+      <img src="img/ucapan-removebg-preview.png" alt="ucapan" class="navbar-icon">
+    </a>
+  </div>
+</nav>
+
+<!-- Salam -->
+      <section id="salam" class="salam">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 text-center">
+                    <h1>Mr.A & Ms.B</h1>
+                    <h3>Selamat Pagi, Siang, Malam,</h3>
+                    <p>Tanpa mengurangi rasa hormat kami bermaksud mengundang Bapak/Ibu/Saudara/i pada acara resepsi pernikahan kami</p>
+                </div>
+            </div>
+            
+            <div class="row mempelai mt-5">
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-8 text-end">
+                            <h3>Mr. A</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <p>Putra dari Bpk. Aa <br> dan <br> Ibu. Ba</p>
+                        </div>
+                        <div class="col-4">
+                            <img src="img/anasui.jpg" alt="anasui" class="img-responsive">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="img/jolyne.jpg" alt="jolyne" class="img-responsive">
+                        </div>
+                        <div class="col-8">
+                            <h3>Ms. B</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <p>Putri dari Bpk. BB <br> dan <br> Ibu. Ab</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+ 
+      </section>
+
+<!-- Kutipan -->
+<section id="kutipan" class="kutipan">
+    <div class="container text-center">
+        <br>
+        <br>
+        <br>
+        <h1>Kutipan Pernikahan</h1>
+        <div class="row justify-content-center">
+          <div class="col-md-4 quote-card">
+            <p class="quote">"Pernikahan yang sukses membutuhkan jatuh cinta berkali-kali, selalu dengan orang yang sama."</p>
+            <p class="author">— Mignon McLaughlin</p>
+          </div>
+          <div class="col-md-4 quote-card">
+            <p class="quote">"Pernikahan yang baik bukan hanya tentang menikahi orang yang tepat, tetapi tentang menjadi pasangan yang tepat."</p>
+            <p class="author">— Anonim</p>
+          </div>
+          <div class="col-md-4 quote-card">
+            <p class="quote">"Pernikahan adalah sebuah perjalanan, bukan tujuan akhir, dan cinta yang kalian bagi adalah yang menjaganya tetap hidup."</p>
+            <p class="author">— Seseorang</p>
+          </div>
+        </div>
+</section>
+
+<!-- Acara -->
+<section id="acara" class="acara">
+  <div class="container text-center">
+      <h1>Detail Acara</h1>
+      <div class="row justify-content-center">
+          <!-- Resepsi Section -->
+          <div class="col-md-6 acara-card">
+              <h2>Resepsi</h2>
+              <p><strong>Tanggal:</strong> Rabu, 31 Desember 2025</p>
+              <p><strong>Waktu:</strong> 7:00 PM - 10:00 PM</p>
+              <p><strong>Tempat:</strong> Ballroom Hotel XX, Jalan Sejahtera No. XX, Jakarta</p>
+          </div>
+      </div>
+      <button id="showMapBtn">Tampilkan Peta</button>
+  </div>
+</section>
+
+
+<!-- Galeri -->
+<section id="galeri" class="galeri">
+  <h1>Galeri Foto Mempelai</h1>
+  <div class="gallery-container row">
+    <div class="gallery-left col-12 col-md-6">
+      <div class="gallery-item">
+        <img src="img/anaslyne1.jpg" alt="Foto 1" class="img-fluid">
+      </div>
+      <div class="gallery-item">
+        <img src="img/anaslyne4.jpg" alt="Foto 2" class="img-fluid">
+      </div>
+    </div>
+
+    <div class="gallery-right col-12 col-md-6">
+      <div class="gallery-item">
+        <img src="img/anaslyne2.jpg" alt="Foto 3" class="img-fluid">
+      </div>
+      <div class="gallery-item">
+        <img src="img/anaslyne3.jpg" alt="Foto 4" class="img-fluid">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Halaman Reservasi -->
+<section id="reservasi" class="reservasi">
+    <div class="container text-center">
+        <h1>Doa Untuk Pengantin</h1>
+        <p>Hari ini adalah awal dari perjalanan baru yang penuh cinta dan kebahagiaan. Selamat menempuh hidup baru, semoga selalu diberkahi kasih sayang dan kebahagiaan tak berujung.</p>
+        <p>Semoga cinta kalian selalu tumbuh mekar seperti bunga yang indah, dan rumah tangga kalian dipenuhi dengan keberkahan, kebahagiaan, dan kedamaian.</p>
+        <p>Mohon mengisi form dibawah ini apabila akan menghadiri acara</p>
+        <button id="openFormButton" class="btn">Konfirmasi & Kirim Ucapan</button>
+    </div>
+</section>
+
+<!-- Popup Form Reservasi -->
+<div id="formPopup" class="popup-window" style="display: none;">
+    <div class="popup-content text-center">
+        <h2>Form Kehadiran</h2>
+        <form id="reservasiForm">
+            <label for="name">Nama Tamu:</label>
+            <input type="text" id="name" name="name" placeholder="Masukkan Nama Anda" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Masukkan Email Anda" required>
+
+            <label for="message">Ucapan:</label>
+            <textarea id="message" name="message" placeholder="Masukkan Ucapan Anda" rows="4" required></textarea>
+
+            <button type="submit" id="kirim" class="btn">Kirim</button>
+            <button type="button" id="cancelButton" class="btn btn-cancel">Batal</button>
+        </form>
+    </div>
+</div>
+
+<div id="loading" class="loading-spinner" style="display: none;"></div>
+
+
+<!-- Hadiah -->
+<section id="hadiah" class="hadiah">
+    <div class="container text-center">
+      <h1>Tanda Kasih</h1>
+      <p>Terima kasih telah hadir dan menambah kegembiraan pernikahan kami dengan kehadiran Anda dan hadiah indah Anda:</p>
+  
+      <div class="button-group">
+        <button id="tunaiButton" class="btn">Tunai</button>
+        <button id="nonTunaiButton" class="btn">Non-Tunai</button>
+      </div>
+  
+      <!-- Popups Container -->
+      <div class="popup-container">
+        <!-- Popup Tunai -->
+        <div id="tunaiPopup" class="popup-window">
+          <div class="popup-content text-center">
+            <h2>Tunai</h2>
+            <p>Silakan transfer ke rekening berikut:</p>
+            <p><strong>Bank ABC</strong></p>
+            <p>Nomor Rekening: <strong>1234-5678-9012</strong></p>
+            <p>Atas Nama: <strong>Nama Pengantin</strong></p>
+            <button type="button" id="cancelButton" class="btn btn-cancel">Batal</button>
+          </div>
+        </div>
+  
+        <!-- Popup Non-Tunai -->
+        <div id="nonTunaiPopup" class="popup-window">
+          <div class="popup-content text-center">
+            <h2>Non-Tunai</h2>
+            <p>Silakan kirim hadiah ke alamat berikut:</p>
+            <p><strong>Jl. Rumah No. 123</strong></p>
+            <p>Kecamatan, Kota, Provinsi</p>
+            <p>Kode Pos: <strong>12345</strong></p>
+            <button type="button" id="cancelButton" class="btn btn-cancel">Batal</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+<!-- Ucapan -->
+ <section id="ucapan" class="ucapan">
+    <div class="container">
+        <h1>Terima Kasih</h1>
+        <p>Terima kasih banyak sudah meluangkan waktu untuk hadir di hari bahagia kami. Kehadiran dan dukungan kalian membuat momen ini semakin berkesan. Semoga kita selalu diberkahi kebahagiaan bersama</p>
+        <p>Yang Berbahagia:</p>
+        <p>Keluarga Bapak & Ibu AA         ||          Keluarga Bapak & Ibu BB</p>
+            </div>
+        </div>
+    </div>
+ </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script>
+    simplyCountdown('.simply-countdown', {
+        year: 2025, // Target year (required)
+        month: 12, // Target month [1-12] (required)
+        day: 31, // Target day [1-31] (required)
+        hours: 8, // Target hour [0-23], default: 0
+        words: { // Custom labels, with lambda for plurals
+            days: { singular: 'Hari', plural: 'Hari'},
+            hours: { singular: 'Jam', plural: 'Jam'},
+            minutes: { singular: 'Menit', plural: 'Menit'},
+            seconds: { singular: 'Detik', plural: 'Detik'}
+        },
+    });
+
+  // Add event listener to show the navbar when the button is clicked
+  document.querySelector('.btn.btn-lg').addEventListener('click', function () {
+    document.getElementById('mainNavbar').classList.add('visible');
+  });
+  </script>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,703 @@
+:root {
+    --pink: #AA817B;
+    --ijo1: #464938;
+    --ijo2: #959586;
+    --item: black;
+    --shadow: 0 2px 2px rgb(0 0 0 / 0.5);
+}
+
+/* HERO MAIN */
+
+/* Reset margin dan padding untuk keseluruhan halaman */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/* Section hero */
+#hero  {
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        padding: 60px;
+        background-image: url(img/bg2.png);
+        background-size: cover;
+        background-position: center;
+        color: var(--item);
+        height: 100vh; 
+}
+
+/* Kontainer teks */
+#hero h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: var(--item);
+}
+
+#hero h1 {
+    font-size: 6rem;
+    margin-bottom: 15px;
+    font-weight:medium;
+    color: var(--item);
+    font-family: 'sacramento';
+}
+
+#hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: var(--item);
+    font-weight:medium;
+}
+
+/* Tombol */
+#hero .btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: var(--pink);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#hero .btn:hover {
+    background-color: white;
+    color: var(--pink);
+}
+
+
+
+/* NAVBAR */
+/* Hide navbar by default */
+.mynavbar {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.3s, opacity 0.3s ease-in-out;
+}
+
+.mynavbar.visible {
+    visibility: visible;
+    opacity: 1;
+}
+
+.navbar {
+    background-color: var(--ijo1);
+    padding: 1px;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    z-index: 1000;
+  }
+  
+  /* Center icons horizontally */
+  .navbar .container {
+    display: flex;
+    justify-content: space-around; /* Equal space between icons */
+    align-items: center;
+  }
+  
+  /* Icon Styling */
+  .navbar-icon {
+    width: 40px;
+    height: auto;
+    transition: transform 0.2s ease-in-out; /* Add hover effect */
+  }
+  
+  .navbar-icon:hover {
+    transform: scale(1.2); /* Slight zoom on hover */
+  }
+  
+  /* Adjust active link styling */
+  .navbar-brand.active .navbar-icon {
+    border-bottom: 2px solid #007BFF; /* Highlight active icon */
+    padding-bottom: 5px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .navbar {
+      padding: 8px 0;
+    }
+  
+    .navbar-icon {
+      width: 35px;
+    }
+  }
+
+
+
+/* MUSIK */
+.control-buttons {
+    position: fixed;
+    top: 550px; 
+    right: 20px; 
+    z-index: 1000; 
+    display: flex;
+    flex-direction: column; 
+    gap: 10px; 
+  }
+  
+  img {
+    width: 40px;  /* Adjust the size of the icons */
+    height: auto;
+    cursor: pointer;
+  }
+  
+  
+  
+/* SALAM */
+.salam {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    padding: 60px;
+    background-image: url(img/bg2.png);
+    background-size: cover;
+    background-position: center;
+    color: var(--item);
+    height: 100vh; 
+  }
+
+.salam h1 {
+    color: var(--item);
+    font-family: 'sacramento';
+    font-size: 4rem;
+}
+
+.salam h3 {
+    color: var(--item);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.salam p {
+    color: var(--item);
+    font-size: 1.1rem;
+    font-weight:medium;
+}
+
+/* mempelai */
+.salam .mempelai {
+    margin-top: 100px;
+    
+}
+
+.salam .mempelai h3 {
+    font-family: 'sacramento';
+    font-size: 2.4rem;
+    color: var(--item);
+}
+
+.salam .mempelai img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* kutipan */
+.kutipan {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    padding: 60px;
+    background-image: url(img/bg2.png);
+    background-size: cover;
+    background-position: center;
+    color: var(--item);
+    height: 100vh;
+}
+
+.kutipan .quote-card {
+    margin: 20px 0;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8); 
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+}
+
+/* Header */
+.kutipan h1 {
+    font-family: 'Sacramento', cursive; 
+    font-size: 4rem;
+    color: var(--item);
+    margin-bottom: 40px;
+}
+
+.quote {
+    font-style: italic;
+}
+
+.author {
+    font-style: italic;
+}
+
+/* Acara Section */
+.acara {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    padding: 60px;
+    background-image: url(img/bg2.png);
+    background-size: cover;
+    background-position: center;
+    color: var(--item);
+    height: 100vh;
+}
+
+.acara h1 {
+    font-family: 'Sacramento', cursive;
+    font-size: 4rem;
+    margin-bottom: 40px;
+    color: var(--item);
+}
+
+.acara-card {
+    margin: 20px 0;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+}
+
+.acara-card h2 {
+    font-family: 'Sacramento', cursive;
+    font-size: 2rem;
+    color: var(--item);
+}
+
+.acara-card p {
+    font-size: 1.1rem;
+    color: var(--item);
+    font-weight: medium;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: var(--pink);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+button:hover {
+    background-color: white;
+    color: var(--pink);
+}
+
+
+/* galeri */
+.galeri h1 {
+    font-family: 'Sacramento', cursive; 
+    font-size: 4rem;
+    color: var(--item);
+    margin-bottom: 40px;
+}
+
+.galeri {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center; 
+    padding: 60px;
+    background-image: url(img/bg2.png);
+    background-size: cover;
+    background-position: center; 
+    color: var(--item);
+    height: 100vh; 
+    text-align: center; 
+}
+
+.gallery-container {
+    display: flex;
+    justify-content: space-between; 
+    gap: 20px;
+    max-width: 800px;
+    width: 100%;
+}
+
+/* ngatur kolom kiri n kanan */
+.gallery-left, .gallery-right {
+    display: flex;
+    flex-direction: column; 
+    gap: 15px;
+    width: 45%;
+}
+
+/* ngatur semua item dlm galeri */
+.gallery-item {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+}
+
+
+/* Reservasi Section */
+.reservasi {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+    background-image: url(img/bg2.png);
+    background-size: cover;
+    background-position: center;
+    color: var(--item);
+    height: 100vh;
+    text-align: center;
+}
+
+.reservasi h1 {
+    font-family: 'Sacramento', cursive;
+    font-size: 4rem;
+    color: var(--item);
+    margin-bottom: 40px;
+}
+
+.reservasi p {
+   font-size: 1.1rem;
+   font-weight: medium;
+}
+
+.reservasi .btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: var(--pink);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.reservasi .btn:hover {
+    background-color: white;
+    color: var(--pink);
+}
+
+/* Popup Window */
+.popup-window {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%; /* Ubah sesuai keinginan, contoh: 90% dari layar */
+    max-width: 400px; /* Maksimal lebar popup */
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    z-index: 1000;
+    padding: 20px;
+    display: none;
+}
+
+/* Popup Content */
+.popup-content {
+    text-align: center;
+}
+
+/* Form Inputs */
+#reservasiForm input,
+#reservasiForm select,
+#reservasiForm textarea {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Buttons */
+#reservasiForm .btn {
+    margin: 10px 5px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: var(--pink);
+    color: #fff;
+}
+
+#reservasiForm .btn:hover {
+    background-color: white;
+    color: var(--item);
+}
+
+#reservasiForm .btn-cancel {
+    background-color: var(--pink);
+    color: #fff;
+}
+
+#reservasiForm .btn-cancel:hover {
+    background-color: white;
+    color: var(--pink);
+}
+
+/* hadiah */
+.hadiah {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+    background-image: url(img/bg2.png);
+    background-size: cover;
+    background-position: center;
+    color: var(--item);
+    height: 100vh;
+    text-align: center;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+ .hadiah h1 {
+    font-family: 'Sacramento', cursive;
+    font-size: 4rem;
+    color: var(--item);
+    margin-bottom: 40px;
+  }
+  
+  .hadiah p {
+    font-size: 1.1rem;
+    color: var(--item);
+    margin: 10px;
+    font-weight: medium;
+  }
+  
+  /* Tombol */
+  .btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: var(--pink);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin: 10px;
+    transition: background-color 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: white;
+    color: var(--pink);
+  }
+  
+ /* Popup Styling */
+.popup-window {
+    display: none; 
+    flex: 1; 
+    margin: 10px; 
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+  }
+  
+  /* Popups Side by Side */
+  .popup-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 20px;
+  }
+  
+  /* Buttons */
+  .button-group {
+    margin-bottom: 20px;
+  }
+  
+  button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: var(--pink);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: white;
+    color: var(--pink);
+  }
+  
+
+.tunaiPopup .btn-cancel {
+    background-color: var(--pink);
+    color: #fff;
+}
+
+.tunaiPopup .btn-cancel:hover {
+    background-color: white;
+    color: var(--pink);
+}
+
+
+.nonTunaiPopup .btn-cancel {
+    background-color: var(--pink);
+    color: #fff;
+}
+
+.nonTunaiPopup .btn-cancel:hover {
+    background-color: white;
+    color: var(--pink);
+}
+  
+
+/* ucapan */
+.ucapan {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+    background-image: url(img/bg2.png);
+    background-size: cover;
+    background-position: center;
+    color: var(--item);
+    height: 100vh;
+    text-align: center;
+  }
+
+.ucapan h1 {
+    font-family: 'Sacramento', cursive;
+    font-size: 4rem;
+    color: var(--item);
+    margin-bottom: 40px;
+  }
+
+.ucapan h4 {
+    color: var(--item);
+    
+}
+
+.ucapan p {
+    font-size: 1.1rem;
+    color: var(--item);
+}
+
+
+
+/* media query */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px); /* Adjust floating effect height */
+    }
+}
+
+
+
+@media (max-width: 576px) {
+    .kutipan .quote-card {
+        margin: 10px 0;
+        padding: 15px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .acara-card {
+        margin: 15px 0;
+        padding: 15px;
+        font-size: 1rem;
+    }
+}
+
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+    #hero h1 {
+        font-size: 2rem;
+    }
+
+    #hero p {
+        font-size: 1rem;
+    }
+
+    #hero .btn {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}
+
+
+/* laptop */
+@media (max-width: 992px){
+    html{   
+        font-size: 75%;
+    }
+    .simply-countdown>.simply-section {
+        padding: 70px;
+    }
+}
+
+/* tablet */
+@media (max-width: 768px){
+    html{
+        font-size: 65%;
+    }
+    .simply-countdown>.simply-section {
+        padding: 60px;
+        margin: 5px;
+
+    }
+}
+
+/* mobile phone */
+@media (max-width: 576px){
+    html{
+        font-size: 60%;
+    }
+    .simply-countdown>.simply-section {
+        padding: 45px;
+        margin: 3px;
+
+    }
+}
+
+
+/* Loading animation */
+.loading-spinner {
+    border: 8px solid #f3f3f3; /* Warna latar belakang */
+    border-top: 8px solid pink; /* Warna pink untuk animasi */
+    border-radius: 50%; /* Membuat lingkaran */
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+    position: fixed; /* Tetap di tengah layar */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999; /* Pastikan berada di atas elemen lain */
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
